@@ -1,0 +1,41 @@
+﻿{
+  "manifestVersion": 1.0,
+  "id": "xperiandri.workitembranch",
+  "version": "1.0",
+  "name": "Work Item Branch",
+  "publisher": "XperiAndri",
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "description": "",
+  "icons": [ ],
+  "categories": [
+    "Code"
+  ],
+  "tags": [
+    "Branching"
+  ],
+  "screenshots": [ ],
+  "public": false,
+  "scopes": [
+    "vso.code_write",
+    "vso.work_write"
+  ],
+  "contributions": [
+    {
+      "id": "xperiandri-work-item-branch-group",
+      "type": "ms.vss-work-web.work-item-form-group",
+      "description": "Branch group of workitem",
+      "targets": [
+        "ms.vss-work-web.work-item-form"
+      ],
+      "properties": {
+        "name": "Branch",
+        "uri": "branchGroup.html",
+        "height": 600
+      }
+    }
+  ]
+}
